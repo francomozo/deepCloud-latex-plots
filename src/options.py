@@ -97,7 +97,7 @@ class Colors:
     def get_names():
         return ['turquoise', 'emerald', 'peterRiver', 'amethyst', 'wetAsphalt', 'greenSea', 
                 'nephritis', 'belizeHole', 'wisteria', 'greenSeaB', 'sunFlower', 'carrot',
-                'alizarin', 'clouds', 'concrete', 'orange', 'pumpkin', 'pomegranate',
+                'alizarin', 'concrete', 'orange', 'pumpkin', 'pomegranate',
                 'silver', 'asbestos']
     
     def get_subpalette_names(subpalette):
