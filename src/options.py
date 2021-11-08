@@ -17,6 +17,7 @@ class Colors:
     turquoise = '#1ABC9C'
     emerald = '#2ECC71'
     peterRiver = '#3498DB'
+    lightPeterRiver = '#6DB5E4'
     amethyst = '#9B59B6'
     wetAsphalt = '#24495E'
     greenSea = '#16A085'
@@ -39,6 +40,7 @@ class Colors:
         'turquoise' : '#1ABC9C',
         'emerald' : '#2ECC71',
         'peterRiver' : '#3498DB',
+        'lightPeterRiver' : '#6db5e4',
         'amethyst' : '#9B59B6',
         'wetAsphalt' : '#24495E',
         'greenSea' : '#16A085',
@@ -77,7 +79,8 @@ class Colors:
         },
         'blues' : {
             'belizeHole' : '#2980B9',
-            'peterRiver' : '#3498DB'
+            'peterRiver' : '#3498DB',
+            'lightPeterRiver' : '#6db5e4',
         },
         'greens' : {
             'greenSeaB' : '#2C3E50',
@@ -95,7 +98,7 @@ class Colors:
     }
     
     def get_names():
-        return ['turquoise', 'emerald', 'peterRiver', 'amethyst', 'wetAsphalt', 'greenSea', 
+        return ['turquoise', 'emerald', 'peterRiver', 'lightPeterRiver', 'amethyst', 'wetAsphalt', 'greenSea', 
                 'nephritis', 'belizeHole', 'wisteria', 'greenSeaB', 'sunFlower', 'carrot',
                 'alizarin', 'concrete', 'orange', 'pumpkin', 'pomegranate',
                 'silver', 'asbestos']
@@ -115,7 +118,7 @@ class Colors:
         plt.title('Color palette', family='serif', fontsize=20)
         for index, (color_name, color) in enumerate(Colors.mixed_palette.items()):
             plt.plot(x, y + index, color=color, linewidth=24)
-            s = color_name + '=' + "" + color + ""
+            s = color_name #+ '=' + "" + color + ""
             plt.text(0, index+.85, s, family='serif', fontsize=15)
             
     def random_color(del_subpalettes=None, use_subpalettes=None):
